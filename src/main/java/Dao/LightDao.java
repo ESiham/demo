@@ -18,11 +18,11 @@ public class LightDao implements LightDaoCustom {
                 .setParameter("value", Status.ON)
                 .getResultList();
     }
-    public List<Light> findRoom(String ID) {
+   /* public List<Light> findRoom(String ID) {
         String jpql = "select lt from Light lt where lt.status = :value";
-        return em.createQuery(jpql,Room.class)
-                .setParameter(Room.setName() )
-                .getSingleResult();
-    }
+        return em.createQuery(jpql,Room.class);
+            //    .setParameter(Room.setName() )
+          //      .getSingleResult();
+    }*/
 }
 
